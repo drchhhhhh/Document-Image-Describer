@@ -91,7 +91,7 @@ const DocumentUpload: React.FC = () => {
             <div className="mt-4">
               <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                 <div 
-                  className="bg-blue-600 h-2.5 rounded-full" 
+                  className="bg-primary h-2.5 rounded-full" 
                   style={{ width: `${progress}%` }}
                   role="progressbar"
                   aria-valuenow={progress}
@@ -103,7 +103,7 @@ const DocumentUpload: React.FC = () => {
             </div>
           )}
           {success && (
-            <div className="mt-4 text-green-500 dark:text-green-400" role="alert">
+            <div className="mt-4 text-primary dark:text-green-400" role="alert">
               <p>Document uploaded successfully!</p>
             </div>
           )}

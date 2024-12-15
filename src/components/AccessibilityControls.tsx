@@ -8,11 +8,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const AccessibilityControls: React.FC = () => {
   const { theme, setTheme, textSize, setTextSize, fontFamily, setFontFamily } = useTheme()
 
-  const textSizeMap: Record<string, string> = {
-    small: '14px',
-    medium: '16px',
-    large: '18px'
+  const handleTextSizeChange = (change: number) => {
+    setTextSize((prevSize) => {
+      const newSize = prevSize + change
+      return Math.min(Math.max(newSize, 12), 20)
+    })
   }
+
+  const resetTextSize = () => setTextSize(16)
 
   return (
     <Card className="w-full">
@@ -29,14 +32,29 @@ const AccessibilityControls: React.FC = () => {
             Text Size
           </h3>
           <div className="flex items-center gap-2">
-            <Button variant="outline" size="sm" onClick={() => setTextSize('small')}>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={() => handleTextSizeChange(-2)}
+              disabled={textSize <= 12}
+            >
               A-
             </Button>
-            <span className="px-3 py-1 bg-muted rounded">{textSizeMap[textSize]}</span>
-            <Button variant="outline" size="sm" onClick={() => setTextSize('large')}>
+            <span className="px-3 py-1 bg-muted rounded">{textSize}px</span>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={() => handleTextSizeChange(2)}
+              disabled={textSize >= 20}
+            >
               A+
             </Button>
-            <Button variant="outline" size="sm" onClick={() => setTextSize('medium')}>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              onClick={resetTextSize}
+              disabled={textSize === 16}
+            >
               Reset
             </Button>
           </div>

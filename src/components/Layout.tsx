@@ -8,22 +8,22 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   return (
     <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
-      <header className="bg-primary shadow-md">
+      <header className="bg-background shadow-md border-b border-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <FileText className="h-8 w-8 text-primary-foreground mr-2" />
-              <span className="text-2xl font-bold text-primary-foreground">DocuSense</span>
+              <FileText className="h-8 w-8 text-primary mr-2" />
+              <span className="text-2xl font-bold text-primary">DocuSense</span>
             </div>
-            <nav className="flex-items-center">
-              <Button className="text-primary-foreground hover:text-primary-foreground/80">
+            <nav className="flex items-center space-x-4">
+              <Button variant="ghost" className="bg-background text-foreground hover:text-primary hover:bg-primary/10">
                 Home
               </Button>
-              <Button className="text-primary-foreground hover:text-primary-foreground/80">
+              <Button variant="ghost" className="bg-background text-foreground hover:text-primary hover:bg-primary/10">
                 About
               </Button>
-              <Button className="text-primary-foreground hover:text-primary-foreground/80">
-                About
+              <Button variant="ghost" className="bg-background text-foreground hover:text-primary hover:bg-primary/10">
+                Contact
               </Button>
             </nav>
           </div>

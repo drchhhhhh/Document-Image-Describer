@@ -3,7 +3,7 @@ const themes = {
   default: {
     '--background': '210 50% 95%',
     '--foreground': '222 47% 11%',
-    '--primary': '221 83% 53%',
+    '--primary': '220 98% 57%',
     '--primary-foreground': '210 40% 98%',
     '--secondary': '210 40% 90%',
     '--secondary-foreground': '222 47% 11%',
@@ -17,7 +17,7 @@ const themes = {
   dark: {
     '--background': '222 84% 4.9%',
     '--foreground': '210 40% 98%',
-    '--primary': '217 91.2% 59.8%',
+    '--primary': '220 98% 57%',
     '--primary-foreground': '222 47.4% 11.2%',
     '--secondary': '217 32.6% 17.5%',
     '--secondary-foreground': '210 40% 98%',
@@ -92,13 +92,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     Object.entries(selectedTheme).forEach(([property, value]) => {
       root.style.setProperty(property, value);
     });
-
-    const textSizeMap: Record<TextSize, string> = {
-      small: '14px',
-      medium: '16px',
-      large: '18px'
-    }
-    root.style.fontSize = textSizeMap[textSize]
+    
+    root.style.fontSize = `${textSize}px`
 
     root.style.fontFamily = getFontFamily(fontFamily);
   }, [theme, textSize, fontFamily]);
