@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# Document Image Describer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+Document Image Describer is an innovative web application designed to enhance accessibility and user interaction in document and image description. This project serves as a demonstration of advanced Human-Computer Interaction (HCI) principles, focusing on emotional design, social interaction, usability, and accessibility.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## Expanding the ESLint configuration
+1. **Emotional Design**
+   - Utilizes a range of color themes to evoke trust and comfort
+   - Provides positive feedback through progress indicators and success messages
+   - Incorporates friendly icons and intuitive UI elements to create a joyful user experience
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. **Social Interaction Design**
+   - (Note: Current implementation does not include social features. Future versions could incorporate sharing capabilities or collaborative document annotation)
 
-- Configure the top-level `parserOptions` property like this:
+3. **Interface Usability**
+   - Intuitive navigation with clear tab structure for document and image upload
+   - Consistent design patterns across different sections of the application
+   - Follows established HCI principles for affordance and feedback
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+4. **Accessibility**
+   - Fully WCAG compliant design
+   - Screen-reader friendly with proper ARIA attributes
+   - Multiple accessibility options including adjustable text size and high contrast themes
+   - Voice command functionality for hands-free operation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+5. **Aesthetic Consistency**
+   - Cohesive design language across all components
+   - Visually appealing interface with a clean, modern aesthetic
+   - Thoughtful use of color and iconography
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+6. **Emotional Feedback Mechanisms**
+   - Real-time progress indicators during file processing
+   - Clear success and error messages to inform and reassure users
+   - Animated transitions for a more engaging experience
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+7. **Responsiveness & Adaptivity**
+   - Fully responsive design that adapts to various screen sizes
+   - Maintains functionality and emotional design goals across devices
+
+8. **Innovation in HCI**
+   - Integration of voice commands for enhanced accessibility
+   - Text-to-speech functionality for document and image descriptions
+   - Customizable interface to cater to individual user needs and preferences
+
+## Technologies Used
+
+- React with TypeScript
+- Next.js framework
+- shadcn/ui components
+- Lucide React icons
+- Web Speech API for voice recognition and synthesis
+
+## Setup and Usage
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Accessibility Features
+
+- Adjustable text size
+- Multiple color themes including high contrast options
+- Voice command support
+- Text-to-speech for document and image descriptions
+- ARIA attributes for screen reader compatibility
+
+## Future Enhancements
+
+- Expand language support for voice commands and text-to-speech
+- Incorporate machine learning for improved document and image analysis
