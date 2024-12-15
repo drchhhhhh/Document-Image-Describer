@@ -39,6 +39,7 @@ Document Image Describer is an innovative web application designed to enhance ac
    - Thoughtful use of color and iconography
 
 5. **Emotional Feedback Mechanisms**
+   ![Screenshot 2024-12-16 012033](https://github.com/user-attachments/assets/02ab0282-a9d0-4de5-92c4-587c342162cd)
    - Real-time progress indicators during file processing
    - Clear success and error messages to inform and reassure users
    - Animated transitions for a more engaging experience
