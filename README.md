@@ -43,6 +43,16 @@ Document Image Describer is an innovative web application designed to enhance ac
    - Integration of voice commands for enhanced accessibility
    - Text-to-speech functionality for document and image descriptions
    - Customizable interface to cater to individual user needs and preferences
+  
+## Accessibility Features
+
+- Adjustable text size
+  ![Screenshot 2024-12-16 010807](https://github.com/user-attachments/assets/76bd1033-3097-4102-ba9d-8c2fb64479ad)
+
+- Multiple color themes including high contrast options
+- Voice command support
+- Text-to-speech for document and image descriptions
+- ARIA attributes for screen reader compatibility
 
 ## Technologies Used
 
@@ -58,14 +68,6 @@ Document Image Describer is an innovative web application designed to enhance ac
 2. Install dependencies: `npm install`
 3. Run the development server: `npm run dev`
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Accessibility Features
-
-- Adjustable text size
-- Multiple color themes including high contrast options
-- Voice command support
-- Text-to-speech for document and image descriptions
-- ARIA attributes for screen reader compatibility
 
 ## Future Enhancements
 
